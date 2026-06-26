@@ -95,8 +95,8 @@ const config: Config = {
               to: '/docs/saved-searches',
             },
             {
-              label: 'Insights and questions',
-              to: '/docs/insights-and-questions',
+              label: 'Questions and Answers',
+              to: '/docs/questions-and-answers',
             },
           ],
         },

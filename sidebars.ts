@@ -21,7 +21,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'opportunities',
         'saved-searches',
-        'insights-and-questions',
+        'questions-and-answers',
         'custom-opportunities',
         'pipeline',
         'alerts',

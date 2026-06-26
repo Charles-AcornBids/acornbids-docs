@@ -27,7 +27,7 @@ const guideCards = [
     title: 'Use AI questions',
     description:
       'Turn recurring bid qualification questions into reusable answers across opportunities.',
-    to: '/docs/insights-and-questions',
+    to: '/docs/questions-and-answers',
   },
   {
     eyebrow: 'Act',
