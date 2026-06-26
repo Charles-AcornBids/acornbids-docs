@@ -56,10 +56,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'AcornBids',
       logo: {
-        alt: 'AcornBids logo',
-        src: 'img/logo.svg',
+        alt: 'AcornBids',
+        src: 'img/acornbids-wordmark.png',
       },
       items: [
         {
@@ -69,8 +68,8 @@ const config: Config = {
           label: 'Product guides',
         },
         {
-          to: '/docs/faq',
-          label: 'FAQ',
+          to: '/docs/release-notes',
+          label: 'Release notes',
           position: 'left',
         },
         {
@@ -117,10 +116,6 @@ const config: Config = {
         {
           title: 'Support',
           items: [
-            {
-              label: 'FAQ',
-              to: '/docs/faq',
-            },
             {
               label: 'Release notes',
               to: '/docs/release-notes',

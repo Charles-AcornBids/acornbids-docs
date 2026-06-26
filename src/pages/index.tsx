@@ -42,57 +42,25 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero', styles.heroBanner)}>
-      <div className={clsx('container', styles.heroGrid)}>
-        <div>
-          <p className={styles.eyebrow}>AcornBids product docs</p>
-          <Heading as="h1" className={clsx('hero__title', styles.title)}>
-            Turn public-sector opportunity data into bid decisions.
-          </Heading>
-          <p className={clsx('hero__subtitle', styles.subtitle)}>
-            {siteConfig.tagline}
-          </p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/docs/getting-started">
-              Start with the workflow
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/saved-searches">
-              Set up saved searches
-            </Link>
-          </div>
-        </div>
-        <div className={styles.productPanel} aria-label="AcornBids workflow preview">
-          <div className={styles.panelTopline}>
-            <span>AcornBids</span>
-            <span>Docs workflow</span>
-          </div>
-          <div className={styles.searchBar}>SAM.gov, grants, agencies, keywords</div>
-          <div className={styles.workflowRows}>
-            <div>
-              <strong>Find</strong>
-              <span>Opportunity search</span>
-            </div>
-            <div>
-              <strong>Focus</strong>
-              <span>Saved search filters</span>
-            </div>
-            <div>
-              <strong>Qualify</strong>
-              <span>AI questions and answers</span>
-            </div>
-            <div>
-              <strong>Pursue</strong>
-              <span>Pipeline actions</span>
-            </div>
-          </div>
-          <div className={styles.panelFooter}>
-            <span>Contracts</span>
-            <span>Grants</span>
-            <span>Custom opportunities</span>
-          </div>
+      <div className="container">
+        <p className={styles.eyebrow}>AcornBids product docs</p>
+        <Heading as="h1" className={clsx('hero__title', styles.title)}>
+          Turn public-sector opportunity data into bid decisions.
+        </Heading>
+        <p className={clsx('hero__subtitle', styles.subtitle)}>
+          {siteConfig.tagline}
+        </p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--primary button--lg"
+            to="/docs/getting-started">
+            Start with the workflow
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/saved-searches">
+            Set up saved searches
+          </Link>
         </div>
       </div>
     </header>

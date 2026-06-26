@@ -35,7 +35,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Reference',
-      items: ['faq', 'release-notes'],
+      items: ['release-notes'],
     },
   ],
 };

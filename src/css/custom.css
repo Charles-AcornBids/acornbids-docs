@@ -61,12 +61,25 @@
 }
 
 .navbar__brand {
+  margin-right: 1.5rem;
   color: var(--acorn-ink);
   font-weight: 800;
 }
 
+.navbar__logo {
+  height: 2.15rem;
+  margin-right: 0;
+}
+
 .navbar__logo img {
-  border-radius: 8px;
+  width: auto;
+  height: 100%;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+[data-theme='dark'] .navbar__logo img {
+  filter: brightness(1.6) saturate(0.95);
 }
 
 .navbar__item--app-link {
