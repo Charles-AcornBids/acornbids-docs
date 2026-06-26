@@ -9,7 +9,7 @@
   --acorn-ink: #10241c;
   --acorn-muted: #50645b;
   --acorn-brand-green: #14533f;
-  --acorn-brand-gold: #b77724;
+  --acorn-accent: #2c6b56;
   --acorn-surface: #fbfcf8;
   --ifm-color-primary: #14533f;
   --ifm-color-primary-dark: #124b39;
@@ -34,7 +34,7 @@
   --acorn-ink: #f3faf5;
   --acorn-muted: #b5c8be;
   --acorn-brand-green: #9ee0bf;
-  --acorn-brand-gold: #e0ad65;
+  --acorn-accent: #9ee0bf;
   --acorn-surface: #10241c;
   --ifm-color-primary: #9ee0bf;
   --ifm-color-primary-dark: #80d5aa;
@@ -127,7 +127,7 @@
 
 .footer {
   --ifm-footer-background-color: #10241c;
-  border-top: 4px solid var(--acorn-brand-gold);
+  border-top: 1px solid rgba(158, 224, 191, 0.18);
 }
 
 [data-theme='dark'] .button--secondary {

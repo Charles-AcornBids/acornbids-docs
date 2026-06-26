@@ -4,7 +4,7 @@
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(20, 83, 63, 0.12), transparent 44%),
-    linear-gradient(315deg, rgba(186, 118, 38, 0.12), transparent 48%),
+    linear-gradient(315deg, rgba(44, 107, 86, 0.08), transparent 48%),
     #fbfcf8;
   border-bottom: 1px solid rgba(20, 83, 63, 0.12);
 }
@@ -39,7 +39,7 @@
 [data-theme='dark'] .heroBanner {
   background:
     linear-gradient(135deg, rgba(158, 224, 191, 0.08), transparent 44%),
-    linear-gradient(315deg, rgba(224, 173, 101, 0.1), transparent 48%),
+    linear-gradient(315deg, rgba(158, 224, 191, 0.06), transparent 48%),
     #0f1915;
   border-bottom-color: rgba(158, 224, 191, 0.14);
 }
@@ -89,7 +89,7 @@
 
 .card > p {
   margin: 0 0 0.75rem;
-  color: var(--acorn-brand-gold);
+  color: var(--acorn-accent);
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
