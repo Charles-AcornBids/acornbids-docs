@@ -1,0 +1,29 @@
+---
+id: faq
+title: FAQ
+sidebar_position: 10
+---
+
+## Is this documentation tied to the AcornBids backend?
+
+No. This help center is a static Docusaurus site. It can be deployed separately from the AcornBids backend, frontend app, workers, and database.
+
+## Where should this site live?
+
+Use `docs.acornbids.com`. That keeps documentation separate from `app.acornbids.com` while still making it easy for users to find.
+
+## How do I update a page?
+
+Edit the matching Markdown or MDX file in the `docs/` folder, then deploy the docs site. No backend deploy is required.
+
+## How do screenshots get added?
+
+Add images under `static/img/` and reference them from docs pages:
+
+```md
+![Saved search filters](/img/saved-search-filters.png)
+```
+
+## Should product docs include internal implementation details?
+
+No. These pages should explain how users operate AcornBids. Keep backend routes, database table names, credentials, and deployment details out of user-facing docs.
