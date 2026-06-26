@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'AcornBids Help Center',
-  tagline: 'Practical guides for finding, tracking, and acting on government opportunities.',
+  tagline: 'Find, qualify, and pursue government opportunities with repeatable AcornBids workflows.',
   favicon: 'img/logo.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -66,7 +66,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'helpSidebar',
           position: 'left',
-          label: 'Help Center',
+          label: 'Product guides',
         },
         {
           to: '/docs/faq',
@@ -77,6 +77,7 @@ const config: Config = {
           href: 'https://app.acornbids.com',
           label: 'Open AcornBids',
           position: 'right',
+          className: 'navbar__item--app-link',
         },
       ],
     },

@@ -1,15 +1,24 @@
 .heroBanner {
-  padding: 5rem 0 4rem;
+  padding: 5.5rem 0 4.5rem;
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(34, 111, 84, 0.08), transparent 45%),
-    linear-gradient(315deg, rgba(39, 80, 128, 0.08), transparent 50%);
+    linear-gradient(135deg, rgba(20, 83, 63, 0.12), transparent 44%),
+    linear-gradient(315deg, rgba(186, 118, 38, 0.12), transparent 48%),
+    #fbfcf8;
+  border-bottom: 1px solid rgba(20, 83, 63, 0.12);
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+  gap: 3rem;
+  align-items: center;
 }
 
 .eyebrow {
   margin: 0 0 0.75rem;
-  color: var(--ifm-color-primary-dark);
+  color: var(--acorn-brand-green);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -17,13 +26,14 @@
 }
 
 .title {
-  max-width: 760px;
+  max-width: 780px;
+  color: var(--acorn-ink);
 }
 
 .subtitle {
   max-width: 720px;
   margin-bottom: 1.75rem;
-  color: var(--ifm-color-content-secondary);
+  color: var(--acorn-muted);
 }
 
 .buttons {
@@ -33,8 +43,103 @@
   gap: 0.75rem;
 }
 
+.productPanel {
+  padding: 1rem;
+  border: 1px solid rgba(20, 83, 63, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 60px rgba(20, 83, 63, 0.14);
+}
+
+.panelTopline,
+.panelFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: var(--acorn-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.searchBar {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(20, 83, 63, 0.14);
+  border-radius: 8px;
+  color: var(--acorn-muted);
+  background: #f8fbf7;
+}
+
+.workflowRows {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.workflowRows div {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(20, 83, 63, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.workflowRows strong {
+  color: var(--acorn-brand-green);
+}
+
+.workflowRows span {
+  color: var(--acorn-ink);
+}
+
+.panelFooter {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.panelFooter span {
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  color: var(--acorn-ink);
+  background: rgba(186, 118, 38, 0.12);
+}
+
+[data-theme='dark'] .heroBanner {
+  background:
+    linear-gradient(135deg, rgba(158, 224, 191, 0.08), transparent 44%),
+    linear-gradient(315deg, rgba(224, 173, 101, 0.1), transparent 48%),
+    #0f1915;
+  border-bottom-color: rgba(158, 224, 191, 0.14);
+}
+
+[data-theme='dark'] .productPanel {
+  border-color: rgba(158, 224, 191, 0.16);
+  background: rgba(19, 36, 29, 0.86);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+}
+
+[data-theme='dark'] .searchBar,
+[data-theme='dark'] .workflowRows div {
+  border-color: rgba(158, 224, 191, 0.14);
+  background: #10241c;
+}
+
 .main {
   padding: 3rem 0 4rem;
+}
+
+.sectionHeader {
+  max-width: 680px;
+  margin-bottom: 1.4rem;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: var(--acorn-ink);
 }
 
 .grid {
@@ -47,13 +152,14 @@
   display: block;
   height: 100%;
   padding: 1.25rem;
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 1px solid rgba(20, 83, 63, 0.14);
   border-radius: 8px;
   color: inherit;
   text-decoration: none;
   background: var(--ifm-background-surface-color);
   transition:
     border-color 160ms ease,
+    box-shadow 160ms ease,
     transform 160ms ease;
 }
 
@@ -61,7 +167,16 @@
   border-color: var(--ifm-color-primary);
   color: inherit;
   text-decoration: none;
+  box-shadow: 0 14px 30px rgba(20, 83, 63, 0.1);
   transform: translateY(-2px);
+}
+
+.card > p {
+  margin: 0 0 0.75rem;
+  color: var(--acorn-brand-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .card h2 {
@@ -69,7 +184,7 @@
   font-size: 1.15rem;
 }
 
-.card p {
+.card span {
   margin: 0;
   color: var(--ifm-color-content-secondary);
 }
@@ -79,6 +194,10 @@
     padding: 3rem 0 2.5rem;
   }
 
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -86,6 +205,10 @@
 
 @media screen and (max-width: 640px) {
   .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .workflowRows div {
     grid-template-columns: 1fr;
   }
 }
