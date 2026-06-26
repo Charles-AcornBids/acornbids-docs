@@ -4,6 +4,20 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+// Keep unpublished docs here so they can be restored without moving files.
+// To turn a guide back on, remove it from this list and add it to sidebars.ts.
+const hiddenDocs = [
+  'alerts.mdx',
+  'billing.mdx',
+  'custom-opportunities.mdx',
+  'getting-started.mdx',
+  'opportunities.mdx',
+  'pipeline.mdx',
+  'release-notes.mdx',
+  'saved-searches.mdx',
+  'team-and-account.mdx',
+];
+
 const config: Config = {
   title: 'AcornBids Help Center',
   tagline: 'Find, qualify, and pursue government opportunities with repeatable AcornBids workflows.',
@@ -41,6 +55,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          exclude: hiddenDocs,
         },
         blog: false,
         theme: {
@@ -65,12 +80,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'helpSidebar',
           position: 'left',
-          label: 'Product guides',
-        },
-        {
-          to: '/docs/release-notes',
-          label: 'Release notes',
-          position: 'left',
+          label: 'Questions and Answers',
         },
         {
           href: 'https://app.acornbids.com',
@@ -87,14 +97,6 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Get started',
-              to: '/docs/getting-started',
-            },
-            {
-              label: 'Saved searches',
-              to: '/docs/saved-searches',
-            },
-            {
               label: 'Questions and Answers',
               to: '/docs/questions-and-answers',
             },
@@ -110,15 +112,6 @@ const config: Config = {
             {
               label: 'AcornBids website',
               href: 'https://acornbids.com',
-            },
-          ],
-        },
-        {
-          title: 'Support',
-          items: [
-            {
-              label: 'Release notes',
-              to: '/docs/release-notes',
             },
           ],
         },

@@ -13,31 +13,9 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
-  helpSidebar: [
-    'getting-started',
-    {
-      type: 'category',
-      label: 'Core workflows',
-      items: [
-        'opportunities',
-        'saved-searches',
-        'questions-and-answers',
-        'custom-opportunities',
-        'pipeline',
-        'alerts',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Account and billing',
-      items: ['team-and-account', 'billing'],
-    },
-    {
-      type: 'category',
-      label: 'Reference',
-      items: ['release-notes'],
-    },
-  ],
+  // Restore hidden pages by removing them from hiddenDocs in docusaurus.config.ts
+  // and adding their doc ids back into this sidebar.
+  helpSidebar: ['questions-and-answers'],
 };
 
 export default sidebars;
